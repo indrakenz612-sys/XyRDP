@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "hostname": "rdpfree-3",
+  "active": true,
+  "hostname": "rdpfree-4",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Windows 10 look",
@@ -8,13 +8,13 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-11T23:05:53Z",
-  "expires_at": "2026-10-12T05:00:53Z",
+  "started_at": "2026-10-12T03:28:32Z",
+  "expires_at": "2026-10-12T09:23:32Z",
   "duration_menit": 355,
-  "run_id": "38182680187",
+  "run_id": "38199566786",
   "run_attempt": "1",
-  "run_number": "3",
-  "run_url": "https://github.com/indrakenz612-sys/XyRDP/actions/runs/38182680187",
+  "run_number": "4",
+  "run_url": "https://github.com/indrakenz612-sys/XyRDP/actions/runs/38199566786",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -34,17 +34,17 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "grafis": {
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "mode": "software",
     "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
     "mesa": "26.2.4",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "dir": "C:\\XyRDP\\grafis",
-    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
-    "debug": "",
     "adapters": "Microsoft Hyper-V Video",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
+    "debug": "",
     "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
-    "mode": "software",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa"
+    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
+    "dir": "C:\\XyRDP\\grafis"
   },
   "extras": {
     "lightshot": "skip",
@@ -57,46 +57,43 @@
   },
   "akses": {
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "100.78.102.77",
       "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
+      "magicdns": "rdpfree-4.tail8f0a75.ts.net.",
+      "hostname": "rdpfree-4",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
     },
     "mode": "tailscale"
   },
   "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "wallpaper": "xyverse_configured_for_user_logon",
     "microphone": "rdp_capture_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled"
   },
   "game_environment": {
+    "play_tested": false,
+    "windows_server": true,
     "runner": "github",
     "hypervisor_present": true,
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "play_tested": false
+    "os": "Microsoft Windows Server 2022 Datacenter"
   },
   "games": {
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
     "samp": {
-      "note": "Pemasangan game hanya di mesin self-hosted khusus.",
-      "status": "requires_self_hosted"
+      "status": "requires_self_hosted",
+      "note": "Pemasangan game hanya di mesin self-hosted khusus."
     },
     "minecraft_java": {
-      "note": "Persiapan gaming hanya untuk mesin Windows self-hosted khusus milikmu.",
-      "status": "requires_self_hosted"
+      "status": "requires_self_hosted",
+      "note": "Persiapan gaming hanya untuk mesin Windows self-hosted khusus milikmu."
+    },
+    "minecraft_bedrock": {
+      "status": "requires_self_hosted",
+      "note": "Persiapan gaming hanya untuk mesin Windows self-hosted khusus milikmu."
     },
     "roblox": {
-      "note": "Persiapan gaming hanya untuk mesin Windows self-hosted khusus milikmu.",
-      "status": "requires_self_hosted"
+      "status": "requires_self_hosted",
+      "note": "Persiapan gaming hanya untuk mesin Windows self-hosted khusus milikmu."
     }
-  },
-  "heartbeat_at": "2026-10-12T03:18:18.7475605Z",
-  "stopped_at": "2026-10-12T03:18:29Z"
+  }
 }
